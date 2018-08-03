@@ -100,7 +100,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     RestProvider,
     HTTP,
-    Camera
+    Camera,
+    QRScanner
 
   ]
 })

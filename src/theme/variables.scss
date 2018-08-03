@@ -109,3 +109,7 @@ $colors: (
 
 
 $item-md-detail-push-show: true;
+
+ion-app.cameraView, ion-app.cameraView ion-content, ion-app.cameraView .nav-decor {
+  background: transparent none !important;
+}
