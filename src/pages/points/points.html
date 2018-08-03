@@ -1,0 +1,75 @@
+<!--
+  Generated template for the PointsPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>{{ 'hajj.rewards' | translate }}</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+  <!-- You can now use it in app.component.html -->
+<div style="margin-top:15%;-webkit-margin-start: 15%;width:70%;">
+
+    <circle-progress
+      [percent]="80"
+      [radius]="100"
+      [outerStrokeWidth]="16"
+      [innerStrokeWidth]="8"
+      [outerStrokeColor]="'#78C000'"
+      [innerStrokeColor]="'#C7E596'"
+      [animation]="true"
+      [animationDuration]="700"
+      [animateSubtitle]="false"
+      [showSubtitle]="false"
+      [animation]="true"
+      [showUnits]="false"></circle-progress>
+
+</div>
+
+
+<ion-grid style="margin-top: 15%;">
+    <!-- <ion-row>
+        <ion-col col-10>
+          <ion-title>{{ 'hajj.aboutEarn' | translate}}</ion-title>
+        </ion-col>
+        <ion-col col-2>
+            <ion-icon name="custom-icon-medals"></ion-icon>
+          </ion-col>
+      </ion-row>
+  <ion-row>
+    <ion-col col-8>
+      <ion-title>{{ 'hajj.firstMedal' | translate}}</ion-title>
+    </ion-col>
+    <ion-col col-4 style="text-align: center">
+        <ion-icon name="custom-icon-medal1"></ion-icon>
+      </ion-col>
+  </ion-row> -->
+   <ion-row>
+      <ion-col col-7 >
+        <ion-title style="font-size: 14px;">{{ 'hajj.pointsCount' | translate}}</ion-title>
+      </ion-col>
+      <ion-col col-5>
+          <ion-title style="color: green">80</ion-title>
+        </ion-col>
+    </ion-row>
+    <br>
+    <ion-row>
+        <ion-col col-6 >
+            <button ion-button style="width:100%" color="secondary">{{ 'hajj.exchange' | translate}}</button>
+        </ion-col>
+        <ion-col col-2><img  src="./assets/imgs/icons/mobily.png"/></ion-col>
+        <ion-col col-2><img src="./assets/imgs/icons/stc.jpg"/></ion-col>
+        <ion-col col-2><img src="./assets/imgs/icons/zain.jpg"/></ion-col>
+      </ion-row>
+</ion-grid>
+
+ 
+</ion-content>

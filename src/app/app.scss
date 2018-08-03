@@ -1,0 +1,521 @@
+// http://ionicframework.com/docs/theming/
+
+
+// App Global Sass
+// --------------------------------------------------
+// Put style rules here that you want to apply globally. These
+// styles are for the entire app and not just one component.
+// Additionally, this file can be also used as an entry point
+// to import other Sass files to be included in the output CSS.
+//
+// Shared Sass variables, which can be used to adjust Ionic's
+// default Sass variables, belong in "theme/variables.scss".
+//
+// To declare rules for a specific mode, create a child rule
+// for the .md, .ios, or .wp mode classes. The mode class is
+// automatically applied to the <body> element in the app.
+ion-header > ion-navbar > button > span.button-inner{
+    content: url(../assets/imgs/icons/right-arrow.svg);
+    width: 25px;
+    height: 25px;
+}
+
+.back-button.show-back-button {
+    z-index: 9999 !important;
+    display: inline-block;
+}
+
+hr.splitter {
+	height: 1px;
+    border: 0;
+	background-color: #e3e1e2;
+    /*background-image:url(../images/border.png);
+    background-repeat: none;*/
+}
+
+
+*{
+    direction: rtl;
+    font-family: DroidKufi-Regular;
+}
+
+ion-navbar{
+    padding-bottom: 0px;
+    //border-bottom: 2px solid #ff905b;
+    border-bottom: 2px solid green;
+}
+
+.subheader{
+    background: #fbded0 !important;
+}
+
+
+ion-app.ios [padding] .scroll-content ,ion-app.md [padding] .scroll-content{
+     padding: 0; 
+}
+.grid {
+    padding: 0;
+}
+
+.toolbar-background-ios{
+    background-color: none;
+}
+
+ion-input[type="tel"]{
+    color: #0065a4;
+    font-family: ComicSansMS-Regular !important;
+}
+
+ion-input[type="text"]{
+    color: #0065a4;
+    font-family: DroidKufi-Regular !important;
+}
+
+.bar-button-default-ios, .bar-button-default.bar-button-ios-default, .bar-button-clear-ios-default{
+    color: black !important;
+}
+
+
+.list-md .item-input.item-input-has-focus:last-child, .list-md .item-input.input-has-focus:last-child {
+    border-bottom-color: white;
+    -webkit-box-shadow: inset 0 -1px 0 0 white;
+    box-shadow: inset 0 -1px 0 0 white;
+}
+.item-md.item-input.item-input-has-focus .item-inner, .item-md.item-input.input-has-focus .item-inner{
+    border-bottom-color: white;
+    -webkit-box-shadow: inset 0 -1px 0 0 white;
+    box-shadow: inset 0 -1px 0 0 white;
+}
+.button-md{
+    height: 45px;
+    box-shadow: none;
+    border-radius: 5px;
+}
+
+
+
+ion-toolbar{
+    padding: 20px;
+}
+
+ion-toolbar{
+    padding: 15px !important;
+    .add-cancel{
+        padding: 5px !important;
+    }
+}
+ion-header{
+    text-align: center;
+}
+.menu-inner{
+    width: 67%;
+}
+
+ion-icon {
+    &[class*="custom-icon-"] {
+        // Instead of using the font-based icons
+        // We're applying SVG masks
+        mask-size: contain;
+        mask-position: 50% 50%;
+        mask-repeat: no-repeat;
+        background: currentColor;
+        width: 25px;
+        height: 25px;
+        color: #ed8a5b;
+        
+    }
+    // custom icons
+    &[class*="custom-icon-timer"] {
+        mask-image: url(../assets/imgs/icons/Artwork30.svg);
+        width: 35px;
+        height: 35px;
+        margin-top: -2px;
+    }&[class*="custom-icon-location"] {
+        mask-image: url(../assets/imgs/icons/Artwork24.svg);
+    }&[class*="custom-icon-note"] {
+        mask-image: url(../assets/imgs/icons/Artwork23.svg);
+    }&[class*="custom-icon-date"] {
+        mask-image: url(../assets/imgs/icons/Artwork25.svg);
+    }&[class*="custom-icon-device"] {
+        mask-image: url(../assets/imgs/icons/Artwork13.svg);
+        width: 40px;
+        height: 50px;
+    }&[class*="custom-icon-menu"] {
+        mask-image: url(../assets/imgs/icons/Asset37.svg);
+    }&[class*="custom-icon-orders"] {
+        mask-image: url(../assets/imgs/icons/Asset28.svg);
+    }&[class*="custom-icon-profile"] {
+        mask-image: url(../assets/imgs/icons/Asset36.svg);
+    }&[class*="custom-icon-maintain"] {
+        mask-image: url(../assets/imgs/icons/Artwork27.svg);
+    }&[class*="custom-icon-contactus"] {
+        mask-image: url(../assets/imgs/icons/Artwork37.svg);
+    }&[class*="custom-icon-myLocation"] {
+        mask-image: url(../assets/imgs/icons/Artwork24.svg);
+        color: #bfbcbc;
+        width: 35px;
+        height: 35px;
+        margin-top: 4px;
+        float: left;
+    }&[class*="custom-icon-mobile"] {
+        mask-image: url(../assets/imgs/icons/Artwork29.svg);
+        color: #bfbcbc;
+        height: 35px;
+        width: 35px;
+        float: left;
+        position: absolute;
+        left: 15px;
+        top: 94px;
+    }&[class*="custom-icon-full-star"] {
+        mask-image: url(../assets/imgs/icons/full-star.svg);
+        color: #ffd203;
+    }&[class*="custom-icon-empty-star"] {
+        mask-image: url(../assets/imgs/icons/empty-star.svg);
+        color: #c9c9c9;
+    }
+    &[class*="custom-icon-youtube"] {
+        mask-image: url(../assets/imgs/icons/youtube.svg);
+    }&[class*="custom-icon-facebook"] {
+        mask-image: url(../assets/imgs/icons/facebook.svg);
+    }&[class*="custom-icon-twitter"] {
+        mask-image: url(../assets/imgs/icons/twitter.svg);
+    }&[class*="custom-icon-instagram"] {
+        mask-image: url(../assets/imgs/icons/instagram.svg);
+    }&[class*="custom-icon-google-plus"] {
+        mask-image: url(../assets/imgs/icons/google-plus.svg);
+    }&[class*="custom-icon-emamco-location"] {
+        mask-image: url(../assets/imgs/icons/Artwork59.svg);
+    }&[class*="custom-icon-emamco-mail"] {
+        mask-image: url(../assets/imgs/icons/Artwork62.svg);
+    }&[class*="custom-icon-full-star-large"] {
+        mask-image: url(../assets/imgs/icons/full-star.svg);
+        color: #ffd203;
+        height: 35px;
+        width: 35px;
+    }&[class*="custom-icon-empty-star-large"] {
+        mask-image: url(../assets/imgs/icons/empty-star.svg);
+        color: #c9c9c9;
+        height: 35px;
+        width: 35px;
+    }
+    &[class*="custom-icon-back"] {
+        mask-image: url(../assets/imgs/icons/right-arrow.svg);
+        color: black;
+    }
+    &[class*="custom-icon-cancel-order"] {
+        mask-image: url(../assets/imgs/icons/Artwork52.svg);
+        color: #d13100;
+        width: 200px;
+        height: 75px;
+    }
+
+    &[class*="custom-icon-air-conditioner"] {
+        mask-image: url(../assets/imgs/icons/air-conditioner.svg);
+    }&[class*="custom-icon-washer-machine"] {
+        mask-image: url(../assets/imgs/icons/washer-machine.svg);
+    }&[class*="custom-icon-oven"] {
+        mask-image: url(../assets/imgs/icons/oven.svg);
+    }&[class*="custom-icon-laundering"] {
+        mask-image: url(../assets/imgs/icons/laundering.svg);
+    }&[class*="custom-icon-fryer"] {
+        mask-image: url(../assets/imgs/icons/fryer.svg);
+    }&[class*="custom-icon-fridge"] {
+        mask-image: url(../assets/imgs/icons/fridge.svg);
+    }&[class*="custom-icon-fan"] {
+        mask-image: url(../assets/imgs/icons/fan.svg);
+    }&[class*="custom-icon-electric-mixer"] {
+        mask-image: url(../assets/imgs/icons/electric-mixer.svg);
+    }&[class*="custom-icon-dishwasher"] {
+        mask-image: url(../assets/imgs/icons/dishwasher.svg);
+    }&[class*="custom-icon-blender"] {
+        mask-image: url(../assets/imgs/icons/blender.svg);
+    }&[class*="custom-icon-washing-machine"] {
+        mask-image: url(../assets/imgs/icons/washing-machine.svg);
+    }
+
+}
+
+ion-icon {
+    &[class*="message-icon-"] {
+        // Instead of using the font-based icons
+        // We're applying SVG masks
+        mask-size: contain;
+        mask-position: 50% 50%;
+        mask-repeat: no-repeat;
+        background: currentColor;
+        width: 25px;
+        height: 20px;
+        color: black;
+        zoom: 3.5;
+        
+    }&[class*="message-icon-account-activated"] {
+        mask-image: url(../assets/imgs/icons/Asset36.svg);
+    }&[class*="message-icon-order-placed"] {
+        mask-image: url(../assets/imgs/icons/Artwork41.svg);
+    }&[class*="message-icon-success"] {
+        mask-image: url(../assets/imgs/icons/Artwork16.svg);
+    }
+}
+.side-menu-icon{
+    vertical-align: -8px;
+    -webkit-margin-end: 10px;
+}
+
+.list-label{
+    font-size: 14px;
+}
+
+.list-md .item-input.ng-valid.item-input-has-value:not(.input-has-focus):not(.item-input-has-focus):last-child, 
+.list-md .item-input.ng-valid.input-has-value:not(.input-has-focus):not(.item-input-has-focus):last-child{
+    border-bottom-color: unset;
+     -webkit-box-shadow: unset; 
+     box-shadow: unset; 
+}
+
+
+
+.alert-md .alert-wrapper{
+    max-width: 92% ;
+    height: 300px;
+    border-radius: 0;
+    width: 92%;
+}
+.alert-md .alert-head{
+    text-align: center;
+    padding: 10px;
+    height: 100px;
+    background-color: #99ff99;
+}
+.alert-md .alert-button{
+    color: white;
+    background-color: #ed8a5b;
+    height: 50px;
+    margin: 15px;
+    border-radius: 5px;
+    border-top:0;
+    margin-top: 40px;
+    width: 100%;
+    text-align: center !important;
+}
+.alert-message,.alert-md .alert-message, .alert-md .alert-input-group{
+    text-align: center;
+    font-size: 18px;
+    color: inherit;
+    padding: 0;
+    height: 70px;
+    background-color: #99ff99;
+}
+.alert-head{
+    background-image: url(../assets/imgs/icons/Artwork16.svg);
+    background-size: 30% 50px;
+    background-repeat: no-repeat;
+    background-position-x: 50%;
+    background-position-y: 50%;
+}
+.alert-md .alert-button-group{
+    padding: 0 !important;
+}
+
+.alert-md .alert-button .button-inner{
+    justify-content: center !important;
+}
+
+ion-title {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0 45px 1px;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+.back-button.show-back-button {
+    z-index: 9999;
+    display: inline-block;
+    }
+
+
+.modalClass{
+    
+    .modal-wrapper {
+        position: absolute;
+        top: 15%;
+        left: 5%;
+        width: 90%;
+        height: 70%;
+    }
+
+    ion-backdrop {
+        left: 0;
+        top: 0;
+        position: absolute;
+        z-index: 2;
+        display: block;
+        width: 100%;
+        height: 100%;   
+        background-color: #000;
+        opacity: .7;
+        transition: opacity 300ms ease-in-out;
+        -webkit-transition: opacity 300ms ease-in-out;
+        visibility: visible;
+    }
+}
+
+.successModalClass{
+    
+    .modal-wrapper {
+        position: absolute;
+        top: 25%;
+        left: 5%;
+        width: 90%;
+        height: 45%;
+    }
+
+    ion-backdrop {
+        left: 0;
+        top: 0;
+        position: absolute;
+        z-index: 2;
+        display: block;
+        width: 100%;
+        height: 100%;   
+        background-color: #000;
+        opacity: .7;
+        transition: opacity 300ms ease-in-out;
+        -webkit-transition: opacity 300ms ease-in-out;
+        visibility: visible;
+    }
+}
+.button-outline-ios
+
+a[disabled].button-ios, button[disabled].button-ios, [ion-button][disabled].button-ios,
+a[disabled].button-md, button[disabled].button-md, [ion-button][disabled].button-md,
+a[disabled].button-outline-ios, button[disabled].button-outline-ios, [ion-button][disabled].button-outline-ios,
+a[disabled].button-outline-md, button[disabled].button-outline-md, [ion-button][disabled].button-outline-md,{
+    background-color:grey;
+}
+
+
+.item-md.item-input.ng-valid.item-input-has-value:not(.input-has-focus):not(.item-input-has-focus) .item-inner, 
+.item-md.item-input.ng-valid.input-has-value:not(.input-has-focus):not(.item-input-has-focus) .item-inner{
+    border-bottom-color: #dedede;
+    -webkit-box-shadow: inset 0 1px 0 0 #dedede;
+    box-shadow: inset 0 1px 0 0 #dedede;
+}
+
+
+ion-icon {
+    &[class*="custom-icon-"] {
+        // Instead of using the font-based icons
+        // We're applying SVG masks
+        mask-size: contain;
+        mask-position: 50% 50%;
+        mask-repeat: no-repeat;
+        background: currentColor;
+        width: 50px;
+        height: 50px;
+        color:green;
+        
+    }
+    // custom icons
+    &[class*="custom-icon-basket"] {
+        mask-image: url(../assets/imgs/icons/recycling-point.svg);
+        width: 75px;
+        height: 75px;
+    }
+    &[class*="custom-icon-reward"] {
+        mask-image: url(../assets/imgs/icons/reward.svg);
+        width: 75px;
+        height: 75px;
+    }
+    &[class*="custom-icon-qrCode"] {
+        mask-image: url(../assets/imgs/icons/qr-code.svg);
+        width: 75px;
+        height: 75px;
+    }
+
+    &[class*="custom-icon-medals"] {
+        mask-image: url(../assets/imgs/icons/medal-reward.svg);
+        width: 45px;
+        height: 75px;
+        opacity: .4;
+    }
+
+    &[class*="custom-icon-medal1"] {
+        mask-image: url(../assets/imgs/icons/medal1.svg);
+        width: 45px;
+        height: 75px;
+        
+        
+    }
+
+    &[class*="custom-icon-tab1"] {
+        mask-image: url(../assets/imgs/icons/recycling.svg);
+        width: 35px;
+        height: 35px;
+        color:#1faa81;
+        
+        
+    }
+
+    &[class*="custom-icon-tab2"] {
+        mask-image: url(../assets/imgs/icons/premium.svg);
+        width: 35px;
+        height: 35px;
+        color:#1faa81;
+        
+        
+    }
+
+    &[class*="custom-icon-tab3"] {
+        mask-image: url(../assets/imgs/icons/user.svg);
+        width: 35px;
+        height: 35px;
+        color:#1faa81;
+        
+        
+    }
+    &[class*="custom-icon-tab4"] {
+        mask-image: url(../assets/imgs/icons/info.svg);
+        width: 35px;
+        height: 35px;
+        color:#1faa81;
+        
+        
+    }
+
+    &[class*="custom-icon-best"] {
+        margin-top:15%;
+        mask-image: url(../assets/imgs/icons/best.svg);
+        width: 70%;
+        -webkit-margin-start: 15%;
+        height: 150px;
+        color:#1faa81;
+        
+        
+    }
+}
+
+.list-md .item-block .item-inner,
+.list-ios .item-block .item-inner{
+    border-bottom: 1px solid #dedede !important;
+}
+
+.content-ios,.content-md{
+    // background-color:color($colors, dark) !important ;
+    color: #000;
+background-color: #fff;
+    -webkit-box-shadow: inset 10px 35px 283px -55px rgba(
+        0,0,0,0.21);
+-moz-box-shadow: inset 10px 35px 283px -55px rgba(0,0,0,0.21);
+box-shadow: inset 10px 35px 283px -55px rgba(0,0,0,0.21);
+ }
+
+ ion-item{
+     background: transparent !important;
+ }
+
+ tspan{
+     color:#1faa81 !important;
+     font-family: cursive;
+ }

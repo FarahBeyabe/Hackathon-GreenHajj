@@ -1,0 +1,46 @@
+{
+  "prepare_queue": {
+    "installed": [],
+    "uninstalled": []
+  },
+  "config_munge": {
+    "files": {}
+  },
+  "installed_plugins": {
+    "cordova-plugin-device": {
+      "PACKAGE_NAME": "com.emam.co"
+    },
+    "cordova-plugin-geolocation": {
+      "PACKAGE_NAME": "com.emam.co"
+    },
+    "cordova-plugin-googlemaps": {
+      "PACKAGE_NAME": "com.emam.co"
+    },
+    "cordova-plugin-ionic-keyboard": {
+      "PACKAGE_NAME": "com.emam.co"
+    },
+    "cordova-plugin-ionic-webview": {
+      "PACKAGE_NAME": "com.emam.co"
+    },
+    "cordova-plugin-nativestorage": {
+      "PACKAGE_NAME": "com.emam.co"
+    },
+    "cordova-plugin-splashscreen": {
+      "PACKAGE_NAME": "com.emam.co"
+    },
+    "cordova-plugin-whitelist": {
+      "PACKAGE_NAME": "com.emam.co"
+    },
+    "cordova-plugin-nativegeocoder": {
+      "PACKAGE_NAME": "com.emam.co"
+    },
+    "cordova-plugin-advanced-http": {
+      "PACKAGE_NAME": "com.emam.co"
+    }
+  },
+  "dependent_plugins": {
+    "cordova-plugin-file": {
+      "PACKAGE_NAME": "com.emam.co"
+    }
+  }
+}

@@ -1,0 +1,46 @@
+page-tabbar {
+
+    .tab-button-text, .tab-button-icon{
+        display: block !important;
+    }
+    .tabs-md .tab-button[aria-selected=true],
+    .tabs-md .tab-button[aria-selected=true] .tab-button-icon,
+    .tabs-ios .tab-button[aria-selected=true],
+    .tabs-ios .tab-button[aria-selected=true] .tab-button-icon{
+        color: #1faa81;
+    }
+    .tabs-md[tabsLayout=icon-top] .has-icon .tab-button-text,
+    .tabs-ios[tabsLayout=icon-top] .has-icon .tab-button-text{
+        font-size:10px;
+    }
+
+    .tabs-md, .tab-button[aria-selected=true], .tab-button-text,
+    .tabs-ios, .tab-button[aria-selected=true], .tab-button-text{
+        -webkit-transform: none !important ;
+        transform: none !important;
+        -webkit-transition: none !important;
+        transition: none !important;
+        transition: none !important;
+    }
+    
+    .tabs-md ,.tab-button-icon,
+    .tabs-ios{
+        -webkit-transform: none !important ;
+        transform: none !important;
+        -webkit-transition: none !important;
+        transition: none !important;
+        transition: none !important;
+    }
+    .has-icon .tab-badge {
+        left: calc(50% - 28px);
+    }
+
+    .tab-badge {
+        top: 5%;
+    }
+    .badge-md ,.badge-ios{
+        border-radius: 20px;
+        color: #fff;
+        background-color: #ed8a5b;
+    }
+}

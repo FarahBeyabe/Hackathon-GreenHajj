@@ -1,0 +1,25 @@
+page-location {
+    #map_canvas{
+        
+       height: 75%;
+        position: relative;
+    }
+    #map_canvas:after {
+        // width: 50px;
+        // height: 60px;
+        // display: block;
+        // content: ' ';
+        // position: absolute;
+        // top: 50%;
+        // left: 50%;
+        // margin: -40px 0 0 -11px;
+        // background: url(../assets/imgs/icons/placeholder.svg) no-repeat;
+        // background-size: 30px 30px;
+        // pointer-events: none;
+      }
+      ion-toolbar.add-cancel{
+        padding: 5px !important;
+    }
+
+
+}

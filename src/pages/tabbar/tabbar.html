@@ -1,0 +1,26 @@
+<!--
+  Generated template for the TabbarPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+  	"tabbar":{ionic cordova plugin rm ionic-plugin-keyboard
+		"myOrders":"طلباتي",
+		"myProfile":"بياناتي",
+		"menu":"القائمة"npm uninstall --save @ionic-native/keyboard
+	}
+-->
+<!-- <ion-tabs #myTabs selectedIndex="3">
+  <ion-tab (ionSelect)="openSideMenu()" tabsHideOnSubPages="false" tabTitle="{{ 'tabbar.menu' | translate}}" tabIcon="custom-icon-menu"></ion-tab>
+  <ion-tab [root]="tab2" tabsHideOnSubPages="false" [tabBadge]="OrdersNumber"  tabTitle="{{ 'tabbar.myOrders' | translate}}" tabIcon="custom-icon-orders"></ion-tab>
+  <ion-tab [root]="tab3" tabsHideOnSubPages="false" tabTitle="{{ 'tabbar.myProfile' | translate}}" tabIcon="custom-icon-profile"></ion-tab>
+  <ion-tab [root]="tab4" tabsHideOnSubPages="false" tabTitle="{{ 'tabbar.maintain' | translate}}"  tabIcon="custom-icon-maintain"></ion-tab>
+  <ion-tab [root]="tab5" tabsHideOnSubPages="false"  tabIcon="custom-icon-menu" show="false"></ion-tab>
+ </ion-tabs> -->
+
+
+ <ion-tabs #myTabs selectedIndex="0">
+    <ion-tab [root]="tab1" tabsHideOnSubPages="false"  tabTitle="{{ 'hajj.main' | translate}}" tabIcon="custom-icon-tab1"></ion-tab>
+    <ion-tab [root]="tab2" tabsHideOnSubPages="false" tabTitle="{{ 'hajj.rewards' | translate}}" tabIcon="custom-icon-tab2"></ion-tab>
+    <ion-tab [root]="tab3" tabsHideOnSubPages="false"  tabTitle="{{ 'hajj.profile' | translate}}" tabIcon="custom-icon-tab3"></ion-tab>
+    <ion-tab [root]="tab4" tabsHideOnSubPages="false" tabTitle="{{ 'hajj.about' | translate}}" tabIcon="custom-icon-tab4"></ion-tab>
+      </ion-tabs>
