@@ -29,8 +29,10 @@ import {ServicePage} from '../pages/service/service'
 import {PointsPage} from '../pages/points/points'
 import {ProfilePage} from '../pages/profile/profile'
 import {AboutPage} from '../pages/about/about'
+import {CameraPage} from '../pages/camera/camera'
 import { NgxQRCodeModule } from 'ngx-qrcode2';
-
+import { Camera } from '@ionic-native/camera';
+import { QRScanner} from '@ionic-native/qr-scanner';
 // Import ng-circle-progress
 import { NgCircleProgressModule } from 'ng-circle-progress';
 
@@ -46,7 +48,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     ServicePage,
     PointsPage,
     ProfilePage,
-    AboutPage
+    AboutPage,
+    CameraPage
   ],
   imports: [
     BrowserModule,
@@ -83,7 +86,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     ServicePage,
     PointsPage,
     ProfilePage,
-    AboutPage
+    AboutPage,
+    CameraPage
     
   ],
   providers: [
@@ -95,7 +99,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     RestProvider,
-    HTTP
+    HTTP,
+    Camera
 
   ]
 })

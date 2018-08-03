@@ -449,6 +449,14 @@ ion-icon {
         
     }
 
+    &[class*="custom-icon-report-location"] {
+        mask-image: url(../assets/imgs/icons/maps-and-flags.svg);
+        width: 45px;
+        height: 75px;
+        
+        
+    }
+
     &[class*="custom-icon-tab1"] {
         mask-image: url(../assets/imgs/icons/recycling.svg);
         width: 35px;
@@ -475,8 +483,17 @@ ion-icon {
         
         
     }
-    &[class*="custom-icon-tab4"] {
+    &[class*="custom-icon-tab5"] {
         mask-image: url(../assets/imgs/icons/info.svg);
+        width: 35px;
+        height: 35px;
+        color:#1faa81;
+        
+        
+    }
+
+    &[class*="custom-icon-tab4"] {
+        mask-image: url(../assets/imgs/icons/qr-code.svg);
         width: 35px;
         height: 35px;
         color:#1faa81;

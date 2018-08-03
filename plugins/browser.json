@@ -36,6 +36,12 @@
     },
     "cordova-plugin-advanced-http": {
       "PACKAGE_NAME": "com.emam.co"
+    },
+    "cordova-plugin-camera": {
+      "PACKAGE_NAME": "com.emam.co"
+    },
+    "cordova-plugin-qrscanner": {
+      "PACKAGE_NAME": "com.hackathon.greenHajj"
     }
   },
   "dependent_plugins": {

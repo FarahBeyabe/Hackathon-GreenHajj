@@ -8,7 +8,7 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
  */
-import {ServicePage} from '../service/service'
+import {TabbarPage} from '../tabbar/tabbar'
 @IonicPage()
 @Component({
   selector: 'page-registeration',
@@ -29,7 +29,7 @@ export class RegisterationPage {
   } 
 
   gotoHomePage(){  
-    this.navCtrl.push(ServicePage);      
+    this.navCtrl.push(TabbarPage);      
   }
 
 }

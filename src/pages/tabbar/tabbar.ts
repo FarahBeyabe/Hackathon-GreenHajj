@@ -9,6 +9,7 @@ import {ServicePage} from '../service/service'
 import {PointsPage} from '../points/points'
 import {AboutPage} from '../about/about'
 import {ProfilePage} from '../profile/profile'
+import {CameraPage} from '../camera/camera'
 
 
 
@@ -28,7 +29,8 @@ export class TabbarPage {
     tab1:any = ServicePage;
     tab2:any = PointsPage;
     tab3:any = ProfilePage;
-    tab4:any = AboutPage;
+    tab4:any = CameraPage;
+    tab5:any = AboutPage;
   // tab2:any = OrdersPage;
   // tab3:any = ProfilePage;
   // tab4:any = HomePage;

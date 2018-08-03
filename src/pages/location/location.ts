@@ -40,10 +40,10 @@ export class LocationPage {
     });
     this.locationValue = "";
     this.locations  = [
-      ['Recycle 1', 21.615157,39.1588956, 1],
-      ['Recycle 2', 21.6157256,39.1646784, 2],
-      ['Recycle 3', 21.624102,39.1619415, 3],
-      ['Recycle 4', 21.6224762,39.1556437, 4]
+      ['Recycle 1', 21.615157,39.1588956, 1,'blue'],
+      ['Recycle 2', 21.6157256,39.1646784, 2,'blue'],
+      ['Recycle 3', 21.624102,39.1619415, 3,'blue'],
+      ['Recycle 4', 21.6224762,39.1556437, 4,'blue']
  ];
   }
   
@@ -105,8 +105,8 @@ export class LocationPage {
                   console.log(this.locations[i][1] + "  "+this.locations[i][2])
                   this.map.addMarker({
                     title: this.locations[i][0],
-                    icon: this.recycle,
-                    animation: 'DROP',
+                    icon: this.locations[i][4],
+                    animation: 'BOUNCE',
                     position: {
                       lat: this.locations[i][1],
                       lng: this.locations[i][2]
